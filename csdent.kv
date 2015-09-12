@@ -1,0 +1,17 @@
+#:kivy 1.9
+
+<Csdent>:
+    id: csdent
+    language_box: language_box
+    screen_manager: screen_manager
+    auto_reload: chkbx.active
+    info_label: info_lbl
+    orientation: 'vertical'
+    BoxLayout:
+        id: reactive_layout
+        orientation: 'vertical'
+        ScreenManager:
+            id: screen_manager
+            Screen:
+                name: "Welcome"
+                login:
